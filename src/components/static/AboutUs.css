@@ -1,0 +1,194 @@
+.all_abt{
+    background-color: #212929f3;
+    overflow: hidden;
+    min-height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    color: rgb(255, 255, 255);
+}
+.about_main{
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.112), #212929c4), url(./images/ab2.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+.abt_one{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    border-left: 20px rgba(255, 255, 255, 0.2) solid;
+    border-top: 20px rgba(255, 255, 255, 0.2) solid;
+    border-bottom: 20px rgba(255, 255, 255, 0.2) solid;
+}
+.abt_head{
+}
+.abt_head p{
+    letter-spacing: 10px;
+    font-weight: 700;
+    height: 100%;
+}
+.our_mission{
+    text-align: right;
+    letter-spacing: 1px;
+}
+.our_mission h3{
+    font-size: 90px;
+    border-right: 20px solid rgba(255, 255, 255, 0.2);
+    line-height: 100px;
+    letter-spacing: 5px;
+}
+.para{
+    font-size: small;
+}
+.content_abt{
+    overflow: hidden;
+    z-index: 5;
+    background-color: #212929;
+    min-height: 150vh;
+    padding: 60px;
+}
+.services{
+    background-color: #18375200;
+    border-radius: 10px;
+    text-align: center;
+}
+.serve_head{
+    font-size: 50px;
+}
+.serve_head h3{
+    letter-spacing: 2px;
+}
+.serve{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+.serve_card{
+    background-color: #183752;
+    padding: 30px;
+    text-align: center;
+}
+.serve_card h3{
+    font-size: x-large;
+    text-decoration: underline gray ;
+}
+.c2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.518), #212929c4), url(./images/servebg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.time{
+    text-align: center;
+}
+.time_head{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.timming{
+    background-color: #183752;
+    border-radius: 10px;
+    padding: 20px;
+}
+.contact{
+    text-align: center;
+    margin-top: 40px;
+}
+.con_head{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.concard_grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 5px;
+}
+.con_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #183752;
+    border-radius: 10px;
+    padding: 20px;
+}
+.con_card:hover{
+    transition: 500ms;
+    background-color: rgba(216, 232, 255, 0.459);
+    border-radius: 0%;
+    scale: 1.05;
+}
+.address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addtext{
+    width: 30%;
+    text-align: left;
+}
+@media only screen and (max-width: 900px){
+    .about_main{
+        padding: 2%;
+        padding-top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .abt_one{
+        grid-template-columns: repeat(1,1fr);
+        min-height: 80%;
+    }
+    .abt_head p{
+        font-size: xx-large;
+        border-right: 20px rgba(255, 255, 255, 0.2) solid;
+    }
+    .our_mission h3{
+        font-size: larger;
+    }
+    .content_abt{
+        padding: 2%;
+    }
+    .services{
+    }
+    .serve_head{
+        font-size: 30px;
+    }
+    .services p{
+        font-size: small;
+    }
+    .serve{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .serve_card{
+        padding: 20px;
+    }
+    .concard_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .mail{
+        grid-column: span 2;
+    }
+    .our_mission h3{
+        line-height: normal;
+        padding-top: 30px;
+    }
+    .address{
+        flex-direction: column;
+    }
+    .addtext{
+        width: 100%;
+        text-align: center;
+    }
+    .phonenum{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2%;
+    }
+    .phonenum div{
+        margin: 10px;
+    }
+}
